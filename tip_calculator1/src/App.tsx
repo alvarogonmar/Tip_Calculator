@@ -10,6 +10,15 @@ function App() {
           Tip and Total Pay Calculator
         </h1>
       </header>
+
+      <main className=" max-w-7xl py-20 mx-auto grid md:grid-cols-2">
+        <div>
+          <h2>Menu</h2>
+        </div>
+        <div>
+          <h2>Consumption</h2>
+        </div>
+      </main>
     </>
   );
 }
