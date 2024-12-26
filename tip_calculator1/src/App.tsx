@@ -23,7 +23,7 @@ function App() {
           </div>
         </div>
         <div>
-          <h2>Consumption</h2>
+          <h2 className=" text-4xl font-black">Consumption</h2>
         </div>
       </main>
     </>
