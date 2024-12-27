@@ -22,8 +22,8 @@ function App() {
             ))}
           </div>
         </div>
-        <div>
-          <h2 className=" text-4xl font-black">Consumption</h2>
+        <div className=" border border-dashed border-slate-300 p-5 rounded-lg space-y-10">
+          <h2 className=" text-4xl font-black"></h2>
         </div>
       </main>
     </>
