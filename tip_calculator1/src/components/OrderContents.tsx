@@ -14,7 +14,9 @@ export default function OrderContents({ order }: OrderContentsProps) {
         ) : (
           order.map((item) => (
             <div key={item.id}>
-              <p>{item.name}</p>
+              <p>
+                {item.name} - {item.price}
+              </p>
             </div>
           ))
         )}
