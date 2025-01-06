@@ -1,6 +1,6 @@
 import { MenuItems, OrderItem } from "../types"
 
-export type orderActions = 
+export type OrderActions = 
     {type : "add-item", payload: {item: MenuItems}} |
     {type : "remove-item", payload: {id: MenuItems["id"]}} |
     {type : "place-order"} |
@@ -14,3 +14,10 @@ export const initialState: OrderState = {
     order: [],
     tip: 0
 }
+
+export const orderReducer = (
+        state: OrderState = initialState,
+        action: OrderActions
+    ) => {
+
+    }
