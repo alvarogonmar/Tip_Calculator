@@ -19,5 +19,34 @@ export const orderReducer = (
         state: OrderState = initialState,
         action: OrderActions
     ) => {
+        
+        if(action.type === "add-item"){
 
-    }
+            return {
+                ...state
+            }
+        }
+
+        if(action.type === "remove-item"){
+
+            return {
+                ...state
+            }
+        }
+
+        if(action.type === "place-order"){
+
+            return {
+                ...state
+            }
+        }
+
+        if(action.type === "add-tip"){
+
+            return {
+                ...state
+            }
+        }
+
+    return state
+}
