@@ -4,13 +4,10 @@ import TipPercentageForm from "./components/TipPercentageForm";
 import OrderTotals from "./components/OrderTotals";
 import { menuItems } from "./data/db";
 import useOrder from "./hooks/useOrder";
-import { useReducer } from "react";
-import { initialState, orderReducer } from "./reducers/order-reducer";
 
 function App() {
   const { order, addItem, removeItem, tip, setTip, placeOrder } = useOrder();
 
-  const [state, dispatch] = useReducer(orderReducer, initialState);
   return (
     <>
       <div className="bg-black text-white min-h-screen">
@@ -25,7 +22,7 @@ function App() {
             <h2 className=" text-4xl font-black">Menu</h2>
             <div className=" space-y-3 mt-10 bg-neutral-700">
               {menuItems.map((item) => (
-                <MenuItem key={item.id} item={item} dispatch={dispatch} />
+                <MenuItem key={item.id} item={item} addItem={addItem} />
               ))}
             </div>
           </div>
